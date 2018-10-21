@@ -39,6 +39,6 @@ Run `ng serve` to see the app in action (try "npm start" in case "ng serve" fail
 
 Run the below commands - only use "sudo" on Mac/ Linux.
 
-sudo npm uninstall -g angular-cli @angular/cli
-npm cache clean --force
-sudo npm install -g @angular/cli
+`sudo npm uninstall -g angular-cli @angular/cli`
+`npm cache clean --force`
+`sudo npm install -g @angular/cli`
