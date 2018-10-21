@@ -1,0 +1,13 @@
+<hr>
+<h3> I'm in Assignment No 2 - Data Bindings</h3>
+<label> UserName : </label>
+<input class="form-control" [(ngModel)] = "userName">
+<p> The user name is {{ userName }}</p>
+<button class="btn btn-primary" [disabled]="getStatus()"  (click)="emptyUserName()" >Reset User Name</button>
+
+<!--
+  1. Property Binding
+  2. Event Binding
+  3. Two Way Binding
+  4. String Interpolation
+-->

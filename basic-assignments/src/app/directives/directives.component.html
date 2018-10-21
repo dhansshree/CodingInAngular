@@ -1,0 +1,32 @@
+<hr>
+<h3> I'm in Assignment No 3 - Directives</h3>
+<div class="row">
+    <div class="col-xs-3">
+        <button class="btn btn-primary" (click)="toggle()"> Toggle Content </button>
+    </div>
+    <div class="col-xs-3">
+    <!-- <p [ngStyle] = "{ display: enablePara == true ? 'block' : 'none' }"> This is a secret text </p> -->
+    <p *ngIf="enablePara == true">This is a secret text</p>  
+    </div>
+    
+</div>
+<div class="row">
+    <div class="col-xs-3">
+    <p *ngFor="let datum of data" [ngStyle]="{ backgroundColor : datum > 4 ? 'blue' : 'white'}"
+        [ngClass] ="{ white : datum > 4}">{{datum}}</p>
+        </div>
+</div>
+
+<!-- <p *ngIf="serverCreated; else noneCreated">Server was created and name was!! {{ serverName }}</p>
+<ng-template #noneCreated>
+  <p>Dhanya Test</p>
+</ng-template> -->
+
+<!--
+  1. Ng If
+  2. Ng Else
+  3. Ng Style
+  4. Ng Template
+  5. Ng For
+  6. Ng Class
+-->
